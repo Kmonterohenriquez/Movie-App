@@ -1,0 +1,35 @@
+.Movie-container {
+  padding: 40px 0;
+}
+
+.Movie-container .movie-box {
+  position: relative;
+}
+
+.Movie-container .movie-box img {
+  border-radius: 10px;
+}
+
+.Movie-container .movie-box .rating {
+  position: absolute;
+  text-align: center;
+  top: 20px;
+  left: -30px;
+  background: black;
+  color: white;
+  padding: 5px 0;
+  width: 65px;
+  border-radius: 30px;
+}
+
+.Movie-container .movie-box .rating i {
+  margin: 0 5px;
+  font-size: 14px;
+  color: yellow;
+}
+
+.Movie-container .movie-box .title {
+  padding: 5px 0;
+  font-size: .9rem;
+}
+/*# sourceMappingURL=MovieOnSection.css.map */

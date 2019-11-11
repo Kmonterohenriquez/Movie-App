@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,MAAM,EAAE,OAAO;EAEf,OAAO,EAAE,EAAE;EACX,UAAU,EAAE,OAAO;CAKW;;AATlC,AAMI,aANS,AAMR,MAAM,CAAC;EAEJ,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,UAAU;CAAG",
+    "sources": [
+        "SingleMovie.sass"
+    ],
+    "names": [],
+    "file": "SingleMovie.css"
+}

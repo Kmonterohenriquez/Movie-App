@@ -1,0 +1,13 @@
+.single-movie {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.single-movie:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+/*# sourceMappingURL=SingleMovie.css.map */
