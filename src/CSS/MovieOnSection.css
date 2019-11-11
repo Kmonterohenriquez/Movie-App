@@ -3,14 +3,21 @@
 }
 
 .Movie-container .movie-box {
+  max-width: 185px;
+}
+
+.Movie-container .movie-box .img-container {
   position: relative;
+  max-width: 185px;
 }
 
-.Movie-container .movie-box img {
+.Movie-container .movie-box .img-container img {
   border-radius: 10px;
+  width: 140px;
+  height: 100%;
 }
 
-.Movie-container .movie-box .rating {
+.Movie-container .movie-box .img-container .rating {
   position: absolute;
   text-align: center;
   top: 20px;
@@ -22,7 +29,7 @@
   border-radius: 30px;
 }
 
-.Movie-container .movie-box .rating i {
+.Movie-container .movie-box .img-container .rating i {
   margin: 0 5px;
   font-size: 14px;
   color: yellow;

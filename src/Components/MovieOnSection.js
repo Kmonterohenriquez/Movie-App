@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import '../../node_modules/swiper/css/swiper.css';
 import '../CSS/MovieOnSection.css';
 
@@ -14,8 +14,10 @@ class MovieOnSection extends Component {
             <div className="Movie-container swipe-slide">
                 {/* <Link to={`/details/`} > */}
                     <div className='movie-box '>
-                        <img src={`http://image.tmdb.org/t/p/w185/${img}`} alt={title}/>
-                        <p className='rating'><i class="fas fa-star"></i>{rating}</p>
+                        <div className='img-container'>
+                            <img src={`http://image.tmdb.org/t/p/w185/${img}`} alt={title}/>
+                            <p className='rating'><i class="fas fa-star"></i>{rating}</p>
+                        </div>
                         <h1 className='title'>{title}</h1>
                     </div>
                 {/* </Link> */}

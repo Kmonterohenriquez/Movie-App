@@ -33,19 +33,19 @@ class API extends Component {
        }
        const slider = new Swiper(sliderEl, {
          init: true,
-         slidesPerView: 10,
+         slidesPerView: 4,
          loop: true,
-         spaceBetween: 0,
+         spaceBetween: 10,
          observer: true,
 
-         breakpoints: {
-           1145: {
-             slidesPerView: 5
-           },
-           699: {
-             slidesPerView: 3
-           },
-         },
+        //  breakpoints: {
+        //    1145: {
+        //      slidesPerView: 5
+        //    },
+        //    699: {
+        //      slidesPerView: 3
+        //    },
+        //  },
          pagination: {
            el: '.swiper-pagination',
            clickable: true

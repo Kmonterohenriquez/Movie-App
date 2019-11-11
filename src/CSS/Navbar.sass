@@ -1,0 +1,49 @@
+.Navbar-container
+    height: 100px
+    width: 100%
+    background: #2d132c
+
+    .inside-header
+        height: 100px
+        display: flex
+        justify-content: space-around
+        align-items: center
+
+        .logo img
+            height: 70px
+
+        .search
+            position: relative
+
+            input
+                border-style: none
+                padding: 8px 35px 8px 15px
+                outline: none
+                border-radius: 30px
+                background: #801336
+                color: white
+                width: 120px
+                transition: width .5s
+                
+                &:focus
+                    width: 200px
+                &::placeholder
+                    color: gray
+
+                
+            i
+                color: white
+                position: absolute
+                top: calc(50% - .5rem)
+                right: 12px            
+        nav li
+                display: inline
+                padding: 35px 15px
+                font-size: 1.3rem
+                text-decoration: none
+                a   
+                    color: white
+                    text-decoration: none
+                    
+
+        
