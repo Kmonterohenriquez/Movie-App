@@ -1,0 +1,43 @@
+.Showcase-container
+    position: relative
+    
+
+    // &::before
+    //     position: absolute
+    //     content: ''
+    //     top: 0
+    //     left: 0
+    //     width: 100%
+    //     height: calc(100% - 4px)
+    //     // background: radial-gradient(transparent , black 97%)
+    //     background: #00000046
+    //     z-index: 2
+    //     // opacity: 1
+
+    img
+        object-fit: cover
+        object-position: top
+        height: auto
+        max-height: calc(100vh - 80px)
+        width: 100vw
+
+
+    .Movie-info
+        z-index: 9
+        position: absolute
+        bottom: 10%
+        left: 10%
+
+        h3, .Showcase-title, .Showcase-rating
+            color: white
+        h3
+            text-transform: uppercase
+            font-size: 1rem
+        .Showcase-title
+            letter-spacing: 1px
+            font-size: 3.5rem
+        .Showcase-rating
+            font-size: 1.2rem
+
+
+        

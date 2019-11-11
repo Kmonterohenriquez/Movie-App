@@ -1,11 +1,11 @@
 .Navbar-container {
-  height: 100px;
+  height: 80px;
   width: 100%;
   background: #2d132c;
 }
 
 .Navbar-container .inside-header {
-  height: 100px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

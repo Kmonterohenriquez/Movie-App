@@ -4,6 +4,7 @@ import MovieOnSection from './MovieOnSection';
 import Swiper from 'swiper';
 import '../../node_modules/swiper/css/swiper.css';
 import '../CSS/SingleMovie.css';
+import '../CSS/API.css';
 
 class API extends Component {
     constructor(props) {
@@ -33,19 +34,29 @@ class API extends Component {
        }
        const slider = new Swiper(sliderEl, {
          init: true,
-         slidesPerView: 4,
+         slidesPerView: 6,
          loop: true,
          spaceBetween: 10,
          observer: true,
 
-        //  breakpoints: {
-        //    1145: {
-        //      slidesPerView: 5
-        //    },
-        //    699: {
-        //      slidesPerView: 3
-        //    },
-        //  },
+         breakpoints: {
+           1300:{
+            slidesPerView: 7
+
+           },
+           800: {
+            slidesPerView: 5
+          },
+           650: {
+            slidesPerView: 4
+          },
+           550: {
+             slidesPerView: 3
+           },
+           400: {
+            slidesPerView: 2
+          },
+         },
          pagination: {
            el: '.swiper-pagination',
            clickable: true
@@ -64,7 +75,7 @@ class API extends Component {
             <div>
                 <div className="swiper-container">
                 
-                  <h1>{this.props.titleSection}</h1>
+                  <h1 className='section-title'>{this.props.titleSection}</h1>
 
                   <div className='swiper-wrapper'>
                     { this.state.movies.map(movie =>{
@@ -82,6 +93,7 @@ class API extends Component {
                         return result
                     })}
                     </div>
+                    {/* <!-- Add Arrows --> */}
                     <div className="swiper-button-prev"></div>
                     <div className="swiper-button-next"></div>
                 </div>

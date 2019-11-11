@@ -1,0 +1,39 @@
+.Showcase-container {
+  position: relative;
+}
+
+.Showcase-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  height: auto;
+  max-height: calc(100vh - 80px);
+  width: 100vw;
+}
+
+.Showcase-container .Movie-info {
+  z-index: 9;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+.Showcase-container .Movie-info h3, .Showcase-container .Movie-info .Showcase-title, .Showcase-container .Movie-info .Showcase-rating {
+  color: white;
+}
+
+.Showcase-container .Movie-info h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.Showcase-container .Movie-info .Showcase-title {
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+}
+
+.Showcase-container .Movie-info .Showcase-rating {
+  font-size: 1.2rem;
+}
+/*# sourceMappingURL=Showcase.css.map */

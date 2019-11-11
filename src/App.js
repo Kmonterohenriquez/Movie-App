@@ -6,6 +6,7 @@ import './App.css';
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
+import MovieDetails from './Pages/MovieDetails';
 
 // import UpcomingSection from './Components/UpcomingSection';
 // import Test from './Components/test';
@@ -16,7 +17,7 @@ function App() {
           <Route exact path='/' component={ Home } />
           <Route exact path='/login' component={ Login } />
           <Route exact path='/signup' component={ Signup } />
-          {/* <Route path ='/movie/:id' component = {Movie} /> */}
+          <Route path ='/movie/:id' component = { MovieDetails } />
           {/* <Route path='/movie/:id' render={props => <Movie {...props}/>} /> */}
     </Router>
   );

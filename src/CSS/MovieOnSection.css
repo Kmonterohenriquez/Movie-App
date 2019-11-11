@@ -2,13 +2,18 @@
   padding: 40px 0;
 }
 
+.Movie-container a {
+  text-decoration: none;
+  color: white;
+}
+
 .Movie-container .movie-box {
-  max-width: 185px;
+  max-width: 140px;
 }
 
 .Movie-container .movie-box .img-container {
   position: relative;
-  max-width: 185px;
+  max-width: 140px;
 }
 
 .Movie-container .movie-box .img-container img {
@@ -36,6 +41,7 @@
 }
 
 .Movie-container .movie-box .title {
+  text-align: center;
   padding: 5px 0;
   font-size: .9rem;
 }
