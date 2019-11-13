@@ -3,13 +3,14 @@ import '../CSS/Home.css';
 
 import Navbar from '../Components/Navbar';
 import Showcase from '../Components/Showcase';
+import MovieShow from '../Components/MovieShow';
 
-import UpcomingSection from '../Components/UpcomingAPI';
+import UpcomingAPI from '../Components/UpcomingAPI';
 import TopRatedAPI from '../Components/TopRatedAPI';
 import NowPlayingAPI from '../Components/NowPlayingAPI';
 import PopularAPI from '../Components/PopularAPI';
 
-
+import Footer from '../Components/Footer';
 
 
 class Home extends Component {
@@ -19,12 +20,14 @@ class Home extends Component {
             <div className='Home-container'>
                 <Navbar />
                 {/* <Showcase /> */}
-                <div className='container'>
-                <UpcomingSection />
-                <PopularAPI />
-                <NowPlayingAPI />
-                <TopRatedAPI />
+                <MovieShow />
+                <div className='Section-container container'>
+                    <UpcomingAPI />
+                    <PopularAPI />
+                    <NowPlayingAPI />
+                    <TopRatedAPI />
                 </div>    
+                <Footer />
             </div>
         );
     }

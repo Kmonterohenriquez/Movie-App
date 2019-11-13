@@ -14,9 +14,9 @@ class API extends Component {
          };
     }
     // Get Upcoming Movies from TheMoviesDB.com
-    componentDidMount() {
+    async componentDidMount() {
         const key_API='dd36eee247f144ba66fce886e88c3fa7';
-        axios.get(`
+        await axios.get(`
         https://api.themoviedb.org/3/movie/${this.props.type}?api_key=${key_API}&language=en-US&page=1`)
           .then(res => {
               console.log(res.data.results);

@@ -25,12 +25,12 @@
 
 .Showcase-container .Movie-info h3 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 
 .Showcase-container .Movie-info .Showcase-title {
   letter-spacing: 1px;
-  font-size: 3.5rem;
+  font-size: 5rem;
 }
 
 .Showcase-container .Movie-info .Showcase-rating {

@@ -1,4 +1,11 @@
 .Home-container {
   background: #2d132c;
 }
+
+.Home-container .Section-container {
+  padding: 50px;
+  border-radius: 12px;
+  background: red;
+  background: #801335b2;
+}
 /*# sourceMappingURL=Home.css.map */

@@ -33,15 +33,16 @@ class Showcase extends Component {
          return;
        }
        const slider = new Swiper(sliderEl, {
-        //  init: true,
-        //  slidesPerView: 1,
-        //  loop: false,
-        //  spaceBetween: 0,
-        //  observer: true,
-        // autoplay: {
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // },
+         init: true,
+         slidesPerView: 1,
+         loop: false,
+         spaceBetween: 0,
+         observer: true,
+         speed: 2100,
+        autoplay: {
+          delay: 1700,
+          disableOnInteraction: false,
+        },
         pagination: {
             el: '.swiper-pagination',
             type: 'progressbar',

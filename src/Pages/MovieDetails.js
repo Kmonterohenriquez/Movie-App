@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import '../CSS/MovieDetails.css';
 
 class MovieDetails extends Component {
     constructor(props) {
@@ -23,13 +24,13 @@ class MovieDetails extends Component {
         // console.log(this.props)
         
         return (
-            <div>
-                <img src={`http://image.tmdb.org/t/p/w1280/${backdrop_path}`} alt={`${backdrop_path} backdrop`}/>
+            <div className='MovieDetails-container'>
+                <img className='Bg-pic' src={`http://image.tmdb.org/t/p/w1280/${backdrop_path}`} alt={`${backdrop_path} backdrop`}/>
+                <img src={`http://image.tmdb.org/t/p/w154/${poster_path}`} alt={`${title} poster`}/>
                 <h1>{ title }</h1>
-                <p>{ overview }</p>
-                <img src={`http://image.tmdb.org/t/p/w342/${poster_path}`} alt={`${title} poster`}/>
-                <h2>{ tagline }</h2>
+                {/* <h2>{ tagline }</h2> */}
                 <p>{ vote_average }</p>
+                <p>{ overview }</p>
             </div>
         );
     }

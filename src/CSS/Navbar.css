@@ -17,7 +17,7 @@
 }
 
 .Navbar-container .inside-header .logo img {
-  height: 70px;
+  height: 35px;
 }
 
 .Navbar-container .inside-header .search {
@@ -26,10 +26,10 @@
 
 .Navbar-container .inside-header .search input {
   border-style: none;
-  padding: 8px 35px 8px 15px;
+  padding: 8px 15px 8px 37px;
   outline: none;
   border-radius: 30px;
-  background: #801336;
+  background: #80133596;
   color: white;
   width: 120px;
   -webkit-transition: width .5s;
@@ -41,31 +41,31 @@
 }
 
 .Navbar-container .inside-header .search input::-webkit-input-placeholder {
-  color: gray;
+  color: #d4d4d4;
 }
 
 .Navbar-container .inside-header .search input:-ms-input-placeholder {
-  color: gray;
+  color: #d4d4d4;
 }
 
 .Navbar-container .inside-header .search input::-ms-input-placeholder {
-  color: gray;
+  color: #d4d4d4;
 }
 
 .Navbar-container .inside-header .search input::placeholder {
-  color: gray;
+  color: #d4d4d4;
 }
 
 .Navbar-container .inside-header .search i {
-  color: white;
+  color: #d4d4d4;
   position: absolute;
   top: calc(50% - .5rem);
-  right: 12px;
+  left: 12px;
 }
 
 .Navbar-container .inside-header nav li {
   display: inline;
-  padding: 35px 15px;
+  padding: 35px 10px;
   font-size: 1.3rem;
   text-decoration: none;
 }

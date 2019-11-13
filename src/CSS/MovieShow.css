@@ -1,0 +1,28 @@
+.MovieShow-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 50px 0;
+}
+
+.MovieShow-container button {
+  cursor: pointer;
+  outline: none;
+  padding: 13px 0;
+  border: double 4px transparent;
+  border-radius: 80px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#c31432), to(#240b36));
+  background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #c31432, #240b36);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.MovieShow-container button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.09rem;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=MovieShow.css.map */

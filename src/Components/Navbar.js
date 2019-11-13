@@ -18,7 +18,7 @@ class Navbar extends Component{
                     </div>
                     <nav> 
                         <ul>
-                            <li><Link to='/home'><i class="fas fa-home"></i></Link></li>
+                            <li><Link to='/'><i class="fas fa-home"></i></Link></li>
                             <li><Link to='/login'><i class="fas fa-user"></i></Link></li>
                             <li><Link to='/search'><i class="fas fa-search"></i></Link></li>
                         </ul>
