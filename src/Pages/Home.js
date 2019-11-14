@@ -19,8 +19,8 @@ class Home extends Component {
         return (
             <div className='Home-container'>
                 <Navbar />
-                {/* <Showcase /> */}
-                <MovieShow />
+                <Showcase />
+                {/* <MovieShow /> */}
                 <div className='Section-container container'>
                     <UpcomingAPI />
                     <PopularAPI />
