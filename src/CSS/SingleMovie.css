@@ -1,8 +1,10 @@
 .single-movie {
   cursor: pointer;
   opacity: .7;
-  -webkit-transition: all .6s;
-  transition: all .6s;
+  -webkit-transition: opacity .6s, -webkit-transform .6s;
+  transition: opacity .6s, -webkit-transform .6s;
+  transition: opacity .6s, transform .6s;
+  transition: opacity .6s, transform .6s, -webkit-transform .6s;
 }
 
 .single-movie:hover {

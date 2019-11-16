@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Swiper from 'swiper';
-import '../../node_modules/swiper/css/swiper.css';
+import '../../../../../node_modules/swiper/css/swiper.css';
 
-import '../CSS/Showcase.css'
+import './Showcase.css'
 class Showcase extends Component {
     constructor(props) {
         super(props);

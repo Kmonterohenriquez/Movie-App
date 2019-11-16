@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import '../CSS/MovieDetails.css';
+import './MovieDetails.css';
 
 class MovieDetails extends Component {
     constructor(props) {

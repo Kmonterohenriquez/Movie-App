@@ -1,6 +1,6 @@
 import React from 'react';
-import '../CSS/SingleMovie.css';
-import API from './API';
+import '../../../../CSS/SingleMovie.css';
+import API from '../../../API/API';
 
 
 

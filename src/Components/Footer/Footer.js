@@ -1,7 +1,7 @@
 import React from 'react';
-import '../CSS/Footer.css';
+import './Footer.css';
 import { Link } from 'react-router-dom';
-import logo from '../img/logo.png'
+import logo from '../../img/logo.png'
 
 function Footer(){
     return(
@@ -22,6 +22,7 @@ function Footer(){
                     <div class='social-media-circle'><i class="fas fa-code"></i></div>
                 </div>
             </div>
+            <a href="https://www.freepik.com/free-photos-vectors/frame">Frame vector created by freepik - www.freepik.com</a>
             <div className='copyright'><p>© 2019 Copyright: <a href='https://kevinmontero.netlify.com/' >Kevin Montero</a></p></div>
         </div>
     )

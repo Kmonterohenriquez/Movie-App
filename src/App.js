@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
 // Pages
-import Home from './Pages/Home';
-import Login from './Pages/Login';
-import Signup from './Pages/Signup';
-import MovieDetails from './Pages/MovieDetails';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import SignUp from './Pages/SignUp/SignUp';
+import MovieDetails from './Pages/MovieDetails/MovieDetails';
 
 // import UpcomingSection from './Components/UpcomingSection';
 // import Test from './Components/test';
@@ -16,7 +16,7 @@ function App() {
     <Router>  
           <Route exact path='/' component={ Home } />
           <Route exact path='/login' component={ Login } />
-          <Route exact path='/signup' component={ Signup } />
+          <Route exact path='/signup' component={ SignUp } />
           <Route path ='/movie/:id' component = { MovieDetails } />
           {/* <Route path='/movie/:id' render={props => <Movie {...props}/>} /> */}
     </Router>

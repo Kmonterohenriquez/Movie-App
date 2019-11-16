@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import MovieOnSection from './MovieOnSection';
+import MovieOnSection from '../MovieOnSection';
 import Swiper from 'swiper';
-import '../../node_modules/swiper/css/swiper.css';
-import '../CSS/SingleMovie.css';
-import '../CSS/API.css';
+import '../../../node_modules/swiper/css/swiper.css';
+import '../../CSS/SingleMovie.css';
+import './API.css';
 
 class API extends Component {
     constructor(props) {
