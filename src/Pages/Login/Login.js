@@ -26,7 +26,7 @@ class Login extends Component {
                         <input placeholder='Password'/>
                     </div>
                         <button>Sign In</button>
-                        <p>Not a member? <Link to='/register'>Register</Link></p>
+                        <p>Not a member? <Link to='/signup'>Register</Link></p>
                         <p><Link>Forgot Password?</Link></p>
 
                     </form>

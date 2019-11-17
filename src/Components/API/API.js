@@ -68,8 +68,6 @@ class API extends Component {
        });
     })();
 
-        
-
           return (
             
             <div>
