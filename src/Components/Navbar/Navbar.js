@@ -9,7 +9,7 @@ class Navbar extends Component{
     render() {
         return(
             <div className='Navbar-container'>
-                <div className='container inside-header'>
+                <div className='lg-container inside-header'>
                     <div className='logo'>
                         <Link to='/'><img src={logo} alt='Logo' /></Link>
                     </div>
@@ -19,7 +19,7 @@ class Navbar extends Component{
                     <nav> 
                         <ul>
                             <li><Link to='/'><i class="fas fa-home"></i></Link></li>
-                            <li><Link to='/login'><i class="fas fa-user"></i></Link></li>
+                            <li><Link to='/login'><i class="fas fa-user-circle"></i></Link></li>
                             <li><Link to='/search'><i class="fas fa-search"></i></Link></li>
                         </ul>
                     </nav> 

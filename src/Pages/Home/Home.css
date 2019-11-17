@@ -7,5 +7,7 @@
   border-radius: 12px;
   background: red;
   background: #801335b2;
+  -webkit-box-shadow: 10px 10px 10px #00000034;
+          box-shadow: 10px 10px 10px #00000034;
 }
 /*# sourceMappingURL=Home.css.map */
