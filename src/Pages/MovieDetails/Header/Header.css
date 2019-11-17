@@ -1,0 +1,111 @@
+.Header-container {
+  position: relative;
+}
+
+.Header-container .back-arrow, .Header-container .share-arrow {
+  cursor: pointer;
+  text-shadow: 5px 10px 5px #00000073;
+  color: white;
+  position: absolute;
+  top: 7%;
+  z-index: 3;
+  font-size: 2.5rem;
+}
+
+.Header-container .back-arrow {
+  left: 10%;
+}
+
+.Header-container .share-arrow {
+  right: 10%;
+}
+
+.Header-container .Bg-pic {
+  overflow: hidden;
+  position: relative;
+}
+
+.Header-container .Bg-pic:before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc( 100% - 4px);
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
+  background: linear-gradient(to top, black, transparent);
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.Header-container .Bg-pic:after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc( 100% - 4px);
+  position: absolute;
+  background: black;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.Header-container .Bg-pic img {
+  height: auto;
+  max-height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info-container {
+  z-index: 3;
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  width: 600px;
+  color: white;
+}
+
+.info-container img {
+  height: 190px;
+  border-radius: 10px;
+  float: left;
+}
+
+.info-container .info {
+  height: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-container .info .info-left {
+  margin-left: 30px;
+}
+
+.info-container .info .info-left h1 {
+  line-height: 2.8rem;
+  font-size: 2.3rem;
+}
+
+.info-container .info .info-left .star {
+  color: #F3C620;
+  margin-right: 3px;
+}
+
+.info-container .info .info-left #rate {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.info-container .info .info-left span {
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=Header.css.map */

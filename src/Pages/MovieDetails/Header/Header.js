@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+import './Header.css'
 
 class Header extends Component {
     render() {
@@ -11,6 +13,8 @@ class Header extends Component {
 
         return (
             <div className='Header-container'>
+                <Link to='/'><i class="back-arrow fas fa-chevron-left"></i></Link>
+                <i class="share-arrow fas fa-share"></i> 
                 <div className='Bg-pic'>
                     <img src= {`http://image.tmdb.org/t/p/w1280/${backdrop_path}`} alt={`${backdrop_path} backdrop`}/>
                 </div>
@@ -19,7 +23,7 @@ class Header extends Component {
                     <div className='info'>
                         <div className='info-left'>
                             <h1> {title} </h1>
-                            <p id='rate'> {vote_average} </p>
+                            <p id='rate'><i class="star fas fa-star"></i> {vote_average} </p>
                             <p>Released | <span> {original_language} </span></p>
                             <div> {genres[0].name} | </div>
                         </div>

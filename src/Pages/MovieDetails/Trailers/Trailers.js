@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Swiper from 'swiper';
 import '../../../../node_modules/swiper/css/swiper.css';
+import './Trailers.css'
 
 class Trailers extends Component {
     // Initiates carousels
@@ -29,9 +30,10 @@ class Trailers extends Component {
              }
            });
         })();
-        // console.log(t)
+        // console.log("Qty of trailers:", this.props.trailers.length)
         return (
-            <div className='swiper-container'>
+          <div className='Trailers-container'>
+            <div className='swiper-container '>
               <h1 className='Section-title'>Trailers</h1>
               <div className='swiper-wrapper'>
                 {this.props.trailers.map( trailer =>(
@@ -48,9 +50,15 @@ class Trailers extends Component {
                     </div>
                 ))}
                 </div>
+
+              {this.props.trailers.length === 1?'':
+              <div>
                 <div className="swiper-button-prev"></div>
-                    <div className="swiper-button-next"></div>
+                <div className="swiper-button-next"></div>
+              </div>
+              }
             </div>
+          </div>
         );
     }
 }

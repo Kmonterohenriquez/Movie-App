@@ -1,0 +1,51 @@
+#Overview-container {
+  background: #222831;
+  margin: 50px 0;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px #00000034;
+          box-shadow: 10px 10px 10px #00000034;
+  position: relative;
+}
+
+#Overview-container .circle {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2d132c;
+}
+
+#Overview-container .circle i {
+  font-size: 30px;
+  color: yellow;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+#Overview-container h1 {
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+#Overview-container p {
+  color: #BAB8C1;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  padding: 0 25px;
+}
+/*# sourceMappingURL=Summary.css.map */

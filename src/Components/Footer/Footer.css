@@ -33,6 +33,10 @@
   font-weight: 500;
 }
 
+.Footer-container .Footer-content nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .Footer-container .copyright {
   background: #393e46;
   padding: 7px 0;
@@ -40,12 +44,16 @@
 
 .Footer-container .copyright p {
   text-align: center;
-  color: white;
+  color: gray;
 }
 
 .Footer-container .copyright a {
   color: white;
   text-decoration: none;
+}
+
+.Footer-container .copyright a:hover {
+  text-decoration: underline;
 }
 
 .Footer-container .social-media {
@@ -61,10 +69,13 @@
 }
 
 .Footer-container .social-media-circle {
-  background: white;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  margin-left: 13px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 10px #00000036;
+          box-shadow: 10px 10px 10px #00000036;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,12 +85,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 10px;
+  background: #393e46;
+  -webkit-transition: background .4s;
+  transition: background .4s;
 }
 
-.Footer-container .social-media i {
+.Footer-container .social-media-circle:hover {
+  background: white;
+}
+
+.Footer-container i {
   display: absolute;
-  color: #222831;
+  color: grey;
   font-size: 20px;
   border-radius: 50%;
 }

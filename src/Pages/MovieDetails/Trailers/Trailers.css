@@ -1,0 +1,17 @@
+.Trailers-container {
+  background: #222831;
+  margin: 50px 0;
+  padding: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 10px #00000034;
+          box-shadow: 10px 10px 10px #00000034;
+}
+
+.Trailers-container h1 {
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=Trailers.css.map */
