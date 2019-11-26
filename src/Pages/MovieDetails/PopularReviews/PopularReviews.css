@@ -17,6 +17,14 @@
   position: relative;
 }
 
+.Review-container .Review:nth-child(even) {
+  border-right: 5px solid white;
+}
+
+.Review-container .Review:nth-child(odd) {
+  border-left: 5px solid white;
+}
+
 .Review-container .Review-user-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,5 +51,23 @@
   color: #BAB8C1;
   padding: 0 50px;
   line-height: 1.5rem;
+  display: block;
+  height: 8ch;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.Review-container .Review a {
+  margin-left: 50px;
+  color: gray;
+  cursor: pointer;
+}
+
+.Review-container .Review a:hover {
+  color: white;
+}
+
+.Review-container .Review a i {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=PopularReviews.css.map */

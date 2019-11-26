@@ -10,6 +10,11 @@
         border-radius: 10px
         box-shadow: 10px 10px 10px #00000034
         position: relative
+        
+        &:nth-child(even)
+            border-right: 5px solid white
+        &:nth-child(odd)
+            border-left: 5px solid white
 
         &-user-info
             display: flex
@@ -30,4 +35,20 @@
             color: #BAB8C1
             padding: 0 50px
             line-height: 1.5rem
+            display: block
+            height: 8ch
+            overflow: hidden
+            margin-bottom: 18px
+        
+        a
+            margin-left: 50px
+            color: gray
+            cursor: pointer
+
+            &:hover
+                color: white
+
+            i 
+                margin-left: 5px
+
 

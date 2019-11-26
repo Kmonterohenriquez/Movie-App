@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './SignUp.css'
+import './SignUp.css';
+// import bgLight from '../../img/lights.jpg'
 
 class Signup extends Component {
     constructor(props) {
@@ -9,19 +10,24 @@ class Signup extends Component {
     render() {
         return (
             <div className='Signup-container'>
-                <div className='container Signup-content'>    
+                <div className='xms-container Signup-content'>
+                    {/* <div className='ligths-img'>
+                        <img src={bgLight} alt='bgLight'/> 
+                    </div>    */}
+                    <h1> Welcome</h1>
+                    <p> To our expectacular cinema where you can have a unique e</p>
                     <form>
-                        <label>Username</label>
+                        {/* <label>First Name</label> */}
                         <input type='text'/>
-                        <label>Name</label>
+                        {/* <label>Last Name</label> */}
                         <input type='text'/>
-                        <label>Username</label>
-                        <input type='text'/>
-                        <label>Password</label>
+                        {/* <label>Email</label> */}
                         <input type='password'/>
-                        <label>Repeat Password</label>
+                        {/* <label>Password</label> */}
                         <input type='password'/>
                     </form>
+
+                    
                 </div>                
             </div>
         );

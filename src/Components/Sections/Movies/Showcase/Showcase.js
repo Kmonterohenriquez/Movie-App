@@ -28,7 +28,7 @@ class Showcase extends Component {
       render() {
         // Initiates carousels
     (() => {
-      const sliderEl = document.querySelectorAll('.swiper-container');
+      const sliderEl = document.querySelectorAll('.Showcase-container .swiper-container');
        if(!sliderEl){
          return;
        }
@@ -38,9 +38,9 @@ class Showcase extends Component {
          loop: false,
          spaceBetween: 0,
          observer: true,
-         speed: 2100,
+         speed: 2200,
         autoplay: {
-          delay: 1700,
+          delay: 1500,
           disableOnInteraction: false,
         },
         pagination: {

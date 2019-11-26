@@ -16,7 +16,8 @@ class PopularReviews extends Component {
                                     <i class="User-icon fas fa-user-circle"></i>
                                     <p className='Review-author'>{review.author}</p>
                                 </div>
-                                <p className='Review-content'>{review.content}</p>
+                                <p className='Review-content' >{review.content}</p>
+                                <a className='Review-full-review'>See full review <i class="fas fa-angle-right"></i></a>
                             </div>
                     ))}
                     </div>:

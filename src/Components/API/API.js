@@ -19,7 +19,7 @@ class API extends Component {
         await axios.get(`
         https://api.themoviedb.org/3/movie/${this.props.type}?api_key=${key_API}&language=en-US&page=1`)
           .then(res => {
-              console.log(res.data.results);
+              console.log('upcoming movies: ',res);
             const movies = res.data.results;
             this.setState({ movies });
           })
@@ -28,7 +28,7 @@ class API extends Component {
       render() {
         // Initiates carousels
     (() => {
-      const sliderEl = document.querySelectorAll('.swiper-container');
+      const sliderEl = document.querySelectorAll('.Small-sliders .swiper-container');
        if(!sliderEl){
          return;
        }
@@ -57,10 +57,6 @@ class API extends Component {
             slidesPerView: 2
           },
          },
-         pagination: {
-           el: '.swiper-pagination',
-           clickable: true
-         },
          navigation: {
            nextEl: '.swiper-button-next',
            prevEl: '.swiper-button-prev',
@@ -70,7 +66,7 @@ class API extends Component {
 
           return (
             
-            <div>
+            <div className='Small-sliders'>
                 <div className="swiper-container">
                 
                   <h1 className='section-title'>{this.props.titleSection}</h1>

@@ -12,14 +12,13 @@ import PopularAPI from '../../Components/Sections/Movies/PopularAPI/PopularAPI';
 
 import Footer from '../../Components/Footer/Footer';
 
-
 class Home extends Component {
     
     render() {
         return (
             <div className='Home-container'>
                 <Navbar />
-                {/* <Showcase /> */}
+                <Showcase />
                 <MovieShow />
                 <div className='Section-container container'>
                     <UpcomingAPI />

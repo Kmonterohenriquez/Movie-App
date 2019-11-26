@@ -40,6 +40,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 550px;
 }
 
 form {
@@ -56,11 +57,6 @@ form {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-form label {
-  margin: 10px;
-  font-size: 1.1rem;
 }
 
 form input {
