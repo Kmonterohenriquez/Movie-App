@@ -2,14 +2,36 @@
   position: relative;
 }
 
-.Showcase-container img {
+.Showcase-container .Showcase-img {
+  position: relative;
+  max-height: calc(100vh - 80px);
+  width: 100vw;
+  z-index: 1;
+}
+
+.Showcase-container .Showcase-img:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), to(transparent));
+  background-image: linear-gradient(to top, black, transparent);
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+}
+
+.Showcase-container .Showcase-img img {
+  height: 100%;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  height: auto;
-  max-height: calc(100vh - 80px);
-  width: 100vw;
+  z-index: 2;
 }
 
 .Showcase-container .Movie-info {
@@ -25,15 +47,16 @@
 
 .Showcase-container .Movie-info h3 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .Showcase-container .Movie-info .Showcase-title {
   letter-spacing: 1px;
-  font-size: 5rem;
+  font-size: 4.3rem;
 }
 
 .Showcase-container .Movie-info .Showcase-rating {
+  font-weight: 100;
   font-size: 1.2rem;
 }
 /*# sourceMappingURL=Showcase.css.map */

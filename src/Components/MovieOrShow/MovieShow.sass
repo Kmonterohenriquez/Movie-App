@@ -2,21 +2,40 @@
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 50px
-
     padding: 50px 0
+    
 
     button
-        cursor: pointer
         outline: none
-        padding: 13px 0
-        border: double 4px transparent
-        border-radius: 80px
-        background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #c31432, #240b36)
-        background-origin: border-box
-        background-clip: content-box, border-box
+        padding: 15px 0
+        border-radius: 30px
+        border-style: none
+        cursor: pointer
+        // border: double 4px transparent
+        // background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #c31432, #240b36)
+        // background-origin: border-box
+        // background-clip: content-box, border-box
+        background: #c72c41
+        position: relative
+        text-transform: uppercase
+        font-size: .6rem
+        display: flex
+        justify-content: center
+        align-items: center
+        box-shadow: 0 10px 10px #0000004d
+        transition: background .5s
+        &:hover 
+            background: darken(#c72c41, 5% )
+
+        i
+            font-size: 1.2rem
+            color: white 
+            margin-right: 10px
         
         a   
+        
             text-decoration: none
             color: white
             font-size: 1.09rem
             letter-spacing: 1px
+        

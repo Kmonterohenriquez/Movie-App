@@ -8,15 +8,38 @@
 }
 
 .MovieShow-container button {
-  cursor: pointer;
   outline: none;
-  padding: 13px 0;
-  border: double 4px transparent;
-  border-radius: 80px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#c31432), to(#240b36));
-  background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #c31432, #240b36);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  padding: 15px 0;
+  border-radius: 30px;
+  border-style: none;
+  cursor: pointer;
+  background: #c72c41;
+  position: relative;
+  text-transform: uppercase;
+  font-size: .6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 10px 10px #0000004d;
+          box-shadow: 0 10px 10px #0000004d;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.MovieShow-container button:hover {
+  background: #b2273a;
+}
+
+.MovieShow-container button i {
+  font-size: 1.2rem;
+  color: white;
+  margin-right: 10px;
 }
 
 .MovieShow-container button a {

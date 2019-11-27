@@ -10,14 +10,14 @@ class PopularReviews extends Component {
                 <h1>Popular Reviews</h1>
                 {this.props.reviews.length !== 0?
                     <div>
-                        {this.props.reviews.map(review=>(
-                            <div className='Review'>
+                        {this.props.reviews.map((review, key)=>(
+                            <div className='Review' key= {key}>
                                 <div className='Review-user-info'>
-                                    <i class="User-icon fas fa-user-circle"></i>
+                                    <i className="User-icon fas fa-user-circle"></i>
                                     <p className='Review-author'>{review.author}</p>
                                 </div>
                                 <p className='Review-content' >{review.content}</p>
-                                <a className='Review-full-review'>See full review <i class="fas fa-angle-right"></i></a>
+                                <a className='Review-full-review'>See full review <i className="fas fa-angle-right"></i></a>
                             </div>
                     ))}
                     </div>:

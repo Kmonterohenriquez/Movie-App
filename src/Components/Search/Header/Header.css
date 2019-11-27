@@ -1,0 +1,87 @@
+.Header {
+  padding: 100px;
+}
+
+.Header h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.Header hr {
+  border-style: none;
+  background: white;
+  width: 50px;
+  height: 3px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 15px auto 70px auto;
+}
+
+.Header .search-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Header .search-filter input, .Header .search-filter select {
+  border-style: none;
+  border-radius: 5px;
+  width: 130px;
+  border-right: 3px solid #393e46;
+  padding: 15px;
+  margin: 0 7px;
+  background: #393e46;
+  color: white;
+}
+
+.Header .search-filter input::-webkit-input-placeholder, .Header .search-filter select::-webkit-input-placeholder {
+  color: #E8E8E8;
+}
+
+.Header .search-filter input:-ms-input-placeholder, .Header .search-filter select:-ms-input-placeholder {
+  color: #E8E8E8;
+}
+
+.Header .search-filter input::-ms-input-placeholder, .Header .search-filter select::-ms-input-placeholder {
+  color: #E8E8E8;
+}
+
+.Header .search-filter input::placeholder, .Header .search-filter select::placeholder {
+  color: #E8E8E8;
+}
+
+.Header .search-filter select {
+  border-radius: 5px;
+}
+
+.Header button {
+  margin-top: 40px;
+  border-style: none;
+  padding: 13px 40px;
+  border-radius: 30px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: #c72c41;
+  -webkit-box-shadow: 0 5px 10px  #000000a2;
+          box-shadow: 0 5px 10px  #000000a2;
+  cursor: pointer;
+  -webkit-transition: background .5s;
+  transition: background .5s;
+}
+
+.Header button:hover {
+  background: #b2273a;
+}
+/*# sourceMappingURL=Header.css.map */

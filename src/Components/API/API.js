@@ -24,6 +24,7 @@ class API extends Component {
             this.setState({ movies });
           })
       }
+      
 
       render() {
         // Initiates carousels

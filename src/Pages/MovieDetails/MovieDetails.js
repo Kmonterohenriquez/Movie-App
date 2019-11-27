@@ -4,6 +4,7 @@ import './MovieDetails.css';
 
 import Header from './Header/Header'
 import Summary from './Summary/Summary'
+import Cast from './Cast/Cast'
 import Trailers from './Trailers/Trailers'
 import PopularReviews from './PopularReviews/PopularReviews'
 
@@ -12,6 +13,7 @@ class MovieDetails extends Component {
         movie: [],
         reviews: [],
         trailers: [],
+        cast:[],
     };
     
 // Get All Info from TheMovieDB API
@@ -37,10 +39,18 @@ componentDidMount() {
     // Get Trailers
     axios.get(`https://api.themoviedb.org/3/movie/${match.params.id}/videos?api_key=${key_API}&language=en-US`)
     .then(res=>{
-        console.log("trailers result", res.data.results)
+        // console.log("trailers result", res.data.results)
         const trailers= (res.data.results);
         this.setState({ trailers });})
     .catch(error => console.log(error))
+    
+    axios.get(`http://api.themoviedb.org/3/movie/${match.params.id}/casts?api_key=${key_API}`)
+    .then( res=> {
+        console.log(res.data.cast)
+        const cast= res.data.cast;
+        this.setState({ cast})
+    })
+
     }
       
     render() {
@@ -59,8 +69,10 @@ componentDidMount() {
             />
             <div className='container'>
                 <Summary overview= { overview } />
+                <Cast cast= {this.state.cast}/>
                 <Trailers trailers= { this.state.trailers } />
                 <PopularReviews reviews= { this.state.reviews } />
+
             </div>            
             </div> : <div> OtherStuff </div>
     return (

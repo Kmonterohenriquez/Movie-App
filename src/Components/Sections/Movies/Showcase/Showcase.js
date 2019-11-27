@@ -40,7 +40,7 @@ class Showcase extends Component {
          observer: true,
          speed: 2200,
         autoplay: {
-          delay: 1500,
+          delay: 1700,
           disableOnInteraction: false,
         },
         pagination: {
@@ -56,7 +56,9 @@ class Showcase extends Component {
             {this.state.movies.map(movie =>{
                 const result=
                     <div className='swiper-slide'>
-                        <img className='Showcase-img' src={`http://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={`${movie.backdrop_path} backdrop`}/>
+                        <div className='Showcase-img'>
+                          <img src={`http://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={`${movie.backdrop_path} backdrop`}/>
+                        </div>
                         <div className='Movie-info'>
                           <h3>Latest</h3>
                           <h1 className='Showcase-title'>{movie.title}</h1>

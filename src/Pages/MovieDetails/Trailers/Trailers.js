@@ -36,12 +36,12 @@ class Trailers extends Component {
             <div className='swiper-container '>
               <h1 className='Section-title'>Trailers</h1>
               <div className='swiper-wrapper'>
-                {this.props.trailers.map( trailer =>(
-                    <div className='swiper-slide'>
+                {this.props.trailers.map( (trailer, key ) =>(
+                    <div className='swiper-slide' key={key}>
                         <iframe
                             title= {trailer.name}
                             width="360" 
-                            height="220" 
+                            height="220"
                             src={`https://www.youtube.com/embed/${trailer.key}`}
                             frameBorder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
