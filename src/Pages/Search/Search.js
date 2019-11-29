@@ -18,6 +18,13 @@ class Search extends Component {
 		movies: []
 	};
 	componentDidMount() {
+		this.getMovies()	
+	}
+	componentDidUpdate(){
+		this.getMovies()
+	}
+
+	getMovies(){
 		const key_API = 'dd36eee247f144ba66fce886e88c3fa7';
 		let { page } = this.state;
 		axios
@@ -47,7 +54,7 @@ class Search extends Component {
 			this.setState({ page: 1 });
 		} else if (pageTransition === '+') {
 			this.setState({ page: this.state.page + 1 });
-		} else if (pageTransition === '+') {
+		} else if (pageTransition === '-') {
 			this.setState({ page: this.state.page - 1 });
 		}
 	};
@@ -58,7 +65,8 @@ class Search extends Component {
 				<Navbar />
 				<Header />
 				<MoviesContainer movies={this.state.movies} />
-				<SearchPagination page={this.state.page} />
+				<SearchPagination handlePagination={this.handlePagination} 
+				page={this.state.page}/>
 			</div>
 		);
 	}
