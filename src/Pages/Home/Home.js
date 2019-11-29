@@ -13,23 +13,22 @@ import PopularAPI from '../../Components/Sections/Movies/PopularAPI/PopularAPI';
 import Footer from '../../Components/Footer/Footer';
 
 class Home extends Component {
-    
-    render() {
-        return (
-            <div className='Home-container'>
-                <Navbar />
-                <Showcase />
-                <MovieShow />
-                <div className='Section-container container'>
-                    <UpcomingAPI />
-                    <PopularAPI />
-                    <NowPlayingAPI />
-                    <TopRatedAPI />
-                </div>    
-                <Footer />
-            </div>
-        );
-    }
+	render() {
+		return (
+			<div className='Home-container'>
+				<Navbar />
+				<Showcase />
+				<MovieShow />
+				<div className='Section-container container'>
+					<UpcomingAPI />
+					<PopularAPI />
+					<NowPlayingAPI />
+					<TopRatedAPI />
+				</div>
+				<Footer />
+			</div>
+		);
+	}
 }
 
 export default Home;

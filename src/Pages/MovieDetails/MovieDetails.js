@@ -69,7 +69,7 @@ componentDidMount() {
             />
             <div className='container'>
                 <Summary overview= { overview } />
-                <Cast cast= {this.state.cast}/>
+                <Cast cast= { this.state.cast }/>
                 <Trailers trailers= { this.state.trailers } />
                 <PopularReviews reviews= { this.state.reviews } />
 

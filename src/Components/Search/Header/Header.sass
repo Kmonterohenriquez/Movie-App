@@ -1,11 +1,11 @@
 .Header
     padding: 100px
-    h1 
+    h1
         color: white
         text-align: center
         font-size: 2.5rem
 
-    hr 
+    hr
         border-style: none
         background: white
         width: 50px
@@ -13,12 +13,13 @@
         text-align: center
         border-radius: 10px
         margin: 15px auto 70px auto
-    
+
     .search-filter
         display: flex
         flex-direction: row
-        justify-content: center
-        align-items: center
+        // justify-content: center
+        // align-items: center
+        transition: display .5s 
 
         input, select
             border-style: none
@@ -29,25 +30,28 @@
             margin: 0 7px
             background: #393e46
             color: white
-            &::placeholder 
+            &::placeholder
                 color: #E8E8E8
 
-        select
-            border-radius: 5px
-            // appearance: none
-            // background: url
     button
-        margin-top: 40px 
+        margin-top: 40px
         border-style: none
         padding: 13px 40px
-        border-radius: 30px 
+        border-radius: 30px
         color: white
         font-weight: 700
         letter-spacing: 1px
-        background:  #c72c41
+        background: #c72c41
         box-shadow: 0 5px 10px  #000000a2
         cursor: pointer
         transition: background .5s
 
-        &:hover 
+        &:hover
             background: darken(#c72c41, 5%)
+
+    @media ( max-width: 1100px )
+        .search-filter
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 20px 0
+
