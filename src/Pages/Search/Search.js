@@ -24,14 +24,21 @@ class Search extends Component {
 	componentDidUpdate() {
 		this.getMovies();
 	}
-	getFilterInfo=(sortBy, voteAverage, withPeople, withGenres, withKeywords, year)=> {
-		if (sortBy) this.setState({ sortBy }); 
+	getFilterInfo = (
+		sortBy,
+		voteAverage,
+		withPeople,
+		withGenres,
+		withKeywords,
+		year
+	) => {
+		if (sortBy) this.setState({ sortBy });
 		if (voteAverage) this.setState({ voteAverage });
 		if (withPeople) this.setState({ withPeople });
 		if (withGenres) this.setState({ withGenres });
 		if (withKeywords) this.setState({ withKeywords });
 		if (year) this.setState({ year });
-	}
+	};
 
 	getMovies() {
 		const key_API = 'dd36eee247f144ba66fce886e88c3fa7';
@@ -73,11 +80,17 @@ class Search extends Component {
 			<div className='Search'>
 				<Navbar />
 				<Header getFilterInfo={this.getFilterInfo} />
-				<MoviesContainer movies={this.state.movies} />
-				<SearchPagination
-					handlePagination={this.handlePagination}
-					page={this.state.page}
-				/>
+				{this.state.movies.length >= 1 ? (
+					<>
+						<MoviesContainer movies={this.state.movies} />
+						<SearchPagination
+							handlePagination={this.handlePagination}
+							page={this.state.page}
+						/>
+					</>
+				) : (
+					<h1 className='NoResults container'>No results found </h1>
+				)}
 			</div>
 		);
 	}

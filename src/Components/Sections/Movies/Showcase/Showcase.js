@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Swiper from 'swiper';
 import '../../../../../node_modules/swiper/css/swiper.css';
+import { Link } from 'react-router-dom';
 
 import './Showcase.css';
 class Showcase extends Component {
@@ -57,9 +58,9 @@ class Showcase extends Component {
 			<div className='Showcase-container'>
 				<div className='swiper-container'>
 					<div className='swiper-wrapper'>
-						{this.state.movies.map(movie => {
-							const result = (
-								<div className='swiper-slide'>
+						{this.state.movies.map(movie => (
+							<div className='swiper-slide'>
+								<Link to={`/movie/${movie.id}`}>
 									<div className='Showcase-img'>
 										<img
 											src={`http://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
@@ -73,10 +74,9 @@ class Showcase extends Component {
 											Drama | {movie.vote_average} Rating
 										</p>
 									</div>
+							</Link>
 								</div>
-							);
-							return result;
-						})}
+						))}
 					</div>
 					<div class='swiper-pagination'></div>
 				</div>
