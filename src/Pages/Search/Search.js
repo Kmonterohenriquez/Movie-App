@@ -6,6 +6,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Header from '../../Components/Search/Header/Header';
 import MoviesContainer from '../../Components/Search/MoviesContainer/MoviesContainer';
 import SearchPagination from '../../Components/Search/SearchPagination/SearchPagination';
+
 class Search extends Component {
 	state = {
 		sortBy: 'popularity.desc',
@@ -18,13 +19,21 @@ class Search extends Component {
 		movies: []
 	};
 	componentDidMount() {
-		this.getMovies()	
+		this.getMovies();
 	}
-	componentDidUpdate(){
-		this.getMovies()
+	componentDidUpdate() {
+		this.getMovies();
+	}
+	getFilterInfo=(sortBy, voteAverage, withPeople, withGenres, withKeywords, year)=> {
+		if (sortBy) this.setState({ sortBy }); 
+		if (voteAverage) this.setState({ voteAverage });
+		if (withPeople) this.setState({ withPeople });
+		if (withGenres) this.setState({ withGenres });
+		if (withKeywords) this.setState({ withKeywords });
+		if (year) this.setState({ year });
 	}
 
-	getMovies(){
+	getMovies() {
 		const key_API = 'dd36eee247f144ba66fce886e88c3fa7';
 		let { page } = this.state;
 		axios
@@ -63,10 +72,12 @@ class Search extends Component {
 		return (
 			<div className='Search'>
 				<Navbar />
-				<Header />
+				<Header getFilterInfo={this.getFilterInfo} />
 				<MoviesContainer movies={this.state.movies} />
-				<SearchPagination handlePagination={this.handlePagination} 
-				page={this.state.page}/>
+				<SearchPagination
+					handlePagination={this.handlePagination}
+					page={this.state.page}
+				/>
 			</div>
 		);
 	}

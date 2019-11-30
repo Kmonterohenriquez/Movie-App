@@ -1,45 +1,69 @@
-import React, { Component } from 'react'
-import './Header.css'
+import React, { Component } from 'react';
+import './Header.css';
 
 class Header extends Component {
-    state = {  }
-    render() {
-        return (
-            <div className='Header'>
-                <h1>Discover</h1>
-                <hr/>
-                <form>
-                    <div className='search-filter'>
-                    <select placeholder>
-                        <option value=''>Popularity Ascending</option>
-                        <option value=''>Popularity descending</option>
-                        <option value=''>Release Date Ascending</option>
-                        <option value=''>Release Date Descending</option>
-                        <option value=''>Revenue Ascending</option>
-                        <option value=''>Revenue Descending</option>
-                        <option value=''>Vote Average Ascending</option>
-                        <option value=''>Vote Average Descending</option>
-                    </select>
-                    <input type='numeric' placeholder='Rate' min='0' max='5'/>
-                    <input type='text' placeholder='People involved'/>
+	constructor(props) {
+		super(props);
+		this.state = {
+            sortBy: null,
+            voteAverage: null,
+            withPeople: null,
+            withGenres: null,
+            withKeywords: null,
+            year: null,
+		};
+	}
+	handleSubmit=(e)=> {
+        e.preventDefault();
+        const{sortBy, voteAverage, withPeople, withGenres, withKeywords, year} = this.state;
+        this.props.getFilterInfo(sortBy, voteAverage, withPeople, withGenres, withKeywords, year);
+	}
 
-                    <select placeholder='Genres'>
-                        <option value=''>Drama</option>
-                        <option value=''></option>
-                        <option value=''></option>
-                        <option value=''></option>
-                        <option value=''></option>
-                        <option value=''></option>
-                        <option value=''></option>
-                    </select>
-                    <input type='text' placeholder='Keywords'/>
-                    <input type='numeric' placeholder='Rate' min='1700'/>
-                    </div>
-                    <button> Search </button>
-                </form>
-            </div>
-        );
-    }
+	handleChange=(e)=> {
+		if (e.target.name === 'sortBy') this.setState({ sortBy: e.target.value });
+        if (e.target.name === 'voteAverage') this.setState({ voteAverage: e.target.value });
+        if (e.target.name === 'withPeople') this.setState({ withPeople: e.target.value });
+        if (e.target.name === 'withGenres') this.setState({ withGenres: e.target.value });
+        if (e.target.name === 'withKeywords') this.setState({ withKeywords: e.target.value });
+        if (e.target.name === 'year') this.setState({ year: e.target.value });
+	}
+	render() {
+		return (
+			<div className='Header'>
+				<h1>Discover</h1>
+				<hr />
+				<form onSubmit={this.handleSubmit}>
+					<div className='search-filter'>
+						<select name='sortBy' onChange={this.handleChange}>
+							<option value='popularity.asc'>Popularity Ascending</option>
+							<option value='popularity.desc'>Popularity descending</option>
+							<option value='release_date.asc'>Release Date Ascending</option>
+							<option value='release_date.desc'>Release Date Descending</option>
+							<option value='revenue.asc'>Revenue Ascending</option>
+							<option value='revenue.desc'>Revenue Descending</option>
+							<option value='vote_average.asc'>Vote Average Ascending</option>
+							<option value='vote_average.desc'>Vote Average Descending</option>
+						</select>
+						<input name='voteAverage' onChange= {this.handleChange} type='numeric' placeholder='Enter rating' min='0' max='10' />
+						<input name='withPeople' type='text' placeholder='People involved' />
+
+						<select name='withGenres' onChange= {this.handleChange} placeholder='Enter Genres'>
+							<option value='Drama'>Drama</option>
+							<option value='Action'>Action</option>
+							<option value='Comedy'>Comedy</option>
+							<option value='Fantasy'>Fantasy</option>
+							<option value='Historical'>Historical</option>
+							<option value='Adventure'>Adventure</option>
+							<option value=''></option>
+						</select>
+						<input name='withKeywords' onChange={this.handleChange} type='text' placeholder='Keywords' />
+						<input name='year' onChange={this.handleChange} type='numeric' placeholder='Enter Year' />
+					</div>
+					<button> Search </button>
+				</form>
+			</div>
+		);
+	}
 }
 
 export default Header;

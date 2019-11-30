@@ -7,7 +7,7 @@ class MoviesContainer extends Component {
 		return (
 			<div className='MovieContainer container grid-search'>
 				{this.props.movies.map(movie => (
-					<Link key={movie.id}>
+					<Link to={`/movie/${movie.id}`} key={movie.id}>
 						<div className='Single-movie'>
 							<img
 								src={`http://image.tmdb.org/t/p/w154/${movie.poster_path}`}
