@@ -8,6 +8,7 @@
     
     .API-logo
         height: 100px
+        margin-right: 35px
         
     .Footer-content
         padding: 50px 0
@@ -63,7 +64,9 @@
 
             background: #393e46
             transition: background .4s
-
+            &:nth-of-type(1)
+                margin-left: 0
+                
             &:hover
                 background: white
 
@@ -73,4 +76,22 @@
         color: grey
         font-size: 20px
         border-radius: 50%
-            
+
+.Footer-top 
+    display: flex
+    justify-content: space-between
+
+
+
+@media (max-width: 700px)
+    
+
+    .Footer-top 
+        align-items: center
+        flex-direction: column
+    .Footer-container 
+        .social-media
+            justify-content: center
+        .API-logo
+            margin-top: 20px
+            margin-right: 0

@@ -1,5 +1,4 @@
 .Navbar-container
-    height: 80px
     width: 100%
     background: #2d132c
 
@@ -44,6 +43,23 @@
                 a   
                     color: white
                     text-decoration: none
-                    
+    .menu-icon 
+        color: white
+        font-size: 1.5rem
+        display: none
+        
+        
+    @media (max-width: 500px)
+        .inside-header .logo img
+            height: 25px
+        .search 
+            display: none
+        nav
+            display: none
+        .menu-icon 
+            display: block
+        .inside-header
+            height: 60px
+            justify-content: space-between
 
         

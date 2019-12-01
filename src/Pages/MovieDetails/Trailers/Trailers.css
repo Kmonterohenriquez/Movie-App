@@ -14,4 +14,25 @@
   margin-bottom: 25px;
   font-size: 1.5rem;
 }
+
+iframe {
+  width: 360px;
+  height: 220px;
+}
+
+@media (max-width: 600px) {
+  .Trailers-container {
+    margin: 30px 0;
+    padding: 20px;
+  }
+  .Trailers-container h1 {
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+  }
+  iframe {
+    width: 250px;
+    height: 170px;
+  }
+}
 /*# sourceMappingURL=Trailers.css.map */

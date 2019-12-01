@@ -5,6 +5,9 @@ import Swiper from 'swiper';
 import '../../../node_modules/swiper/css/swiper.css';
 import '../../CSS/SingleMovie.css';
 import './API.css';
+// import Fade from 'react-reveal/Fade';
+
+
 
 class API extends Component {
 	constructor(props) {
@@ -37,27 +40,27 @@ class API extends Component {
 			if (!sliderEl) {
 				return;
 			}
-			const slider = new Swiper(sliderEl, {
+			new Swiper(sliderEl, {
 				init: true,
-				slidesPerView: 6,
+				slidesPerView: 7,
 				loop: true,
 				spaceBetween: 10,
 				observer: true,
 
 				breakpoints: {
 					1300: {
-						slidesPerView: 7
+						slidesPerView: 6
 					},
-					800: {
+					1100:{
 						slidesPerView: 5
 					},
-					650: {
+					820: {
 						slidesPerView: 4
 					},
-					550: {
+					600:{
 						slidesPerView: 3
 					},
-					400: {
+					300: {
 						slidesPerView: 2
 					}
 				},
@@ -74,28 +77,28 @@ class API extends Component {
 					<h1 className='section-title'>{this.props.titleSection}</h1>
 
 					<div className='swiper-wrapper'>
-						{this.state.movies.map(movie => {
-							var result = (
-								<div className='single-movie swiper-slide'>
+						{this.state.movies.map(movie => (
+							
+							<div className='single-movie swiper-slide'>
+									{/* <Fade bottom delay={900} duration={1300}> */}
 									<MovieOnSection
-										from='TopRatedAPI'
 										id={movie.id}
 										title={movie.title}
 										img={movie.poster_path}
 										rating={movie.vote_average}
 									/>
+						{/* </Fade> */}
 								</div>
-							);
-							return result;
-						})}
+						))}
 					</div>
 					{/* <!-- Add Arrows --> */}
 					<div className='swiper-button-prev'></div>
 					<div className='swiper-button-next'></div>
 				</div>
 			</div>
-		);
+			);
+		}
 	}
-}
-
-export default API;
+	
+	export default API;
+	

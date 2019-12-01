@@ -1,6 +1,6 @@
 .Movie-container
     padding: 40px 0
-    a   
+    a
         text-decoration: none
         color: white
     .movie-box
@@ -10,12 +10,11 @@
             position: relative
             max-width: 140px
 
-            img 
+            img
                 border-radius: 10px
-                width: 140px
-                height: 100%
+                height: 200px
 
-            .rating   
+            .rating
                 position: absolute
                 text-align: center
                 top: 20px
@@ -24,10 +23,9 @@
                 color: white
                 padding: 5px 0
                 width: 65px
-                // font-size: 2rem
                 border-radius: 30px
 
-                i   
+                i
                     margin: 0 5px
                     font-size: 14px
                     color: yellow
@@ -37,3 +35,11 @@
             padding: 5px 0
             font-size: .9rem
             color: white
+
+@media (max-width: 500px)
+    .Movie-container
+        .movie-box
+            max-width: 100px
+            .img-container
+                img
+                    height: 150px

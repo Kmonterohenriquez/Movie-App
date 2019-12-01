@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './MovieContainer.css';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
+
 
 class MoviesContainer extends Component {
 	render() {
 		return (
 			<div className='MovieContainer container grid-search'>
 				{this.props.movies.map(movie => (
+					<Fade bottom delay={800} duration={1300}>
 					<Link to={`/movie/${movie.id}`} key={movie.id}>
 						<div className='Single-movie'>
 							<img
@@ -20,6 +23,7 @@ class MoviesContainer extends Component {
 							</p>
 						</div>
 					</Link>
+					</Fade>
 				))}
 			</div>
 		);

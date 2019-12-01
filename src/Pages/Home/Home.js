@@ -12,6 +12,7 @@ import PopularAPI from '../../Components/Sections/Movies/PopularAPI/PopularAPI';
 
 import Footer from '../../Components/Footer/Footer';
 
+
 class Home extends Component {
 	render() {
 		return (

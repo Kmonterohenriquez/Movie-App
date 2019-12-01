@@ -25,10 +25,10 @@ class Header extends Component {
                             <h1> {title} </h1>
                             <p id='rate'><i className="star fas fa-star"></i> {vote_average} </p>
                             <p>Released | <span> {original_language} </span></p>
-                            <div> {genres[0].name} | </div>
+                            <div> {genres[0].name?genres[0].name: <p>Genre</p>} </div>
                         </div>
                         <div className='info-right'>
-                            <i className="fas fa-heart"></i>
+                            <i className="fas fa-heart heart-icon"></i>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,7 @@
 
 .Footer-container .API-logo {
   height: 100px;
+  margin-right: 35px;
 }
 
 .Footer-container .Footer-content {
@@ -94,6 +95,10 @@
   transition: background .4s;
 }
 
+.Footer-container .social-media-circle:nth-of-type(1) {
+  margin-left: 0;
+}
+
 .Footer-container .social-media-circle:hover {
   background: white;
 }
@@ -103,5 +108,35 @@
   color: grey;
   font-size: 20px;
   border-radius: 50%;
+}
+
+.Footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .Footer-top {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Footer-container .social-media {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .Footer-container .API-logo {
+    margin-top: 20px;
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

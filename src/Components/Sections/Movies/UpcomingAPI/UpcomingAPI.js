@@ -3,7 +3,6 @@ import '../../../../CSS/SingleMovie.css';
 import API from '../../../API/API';
 
 
-
 function UpcomingAPI(){
   return(
     <div>

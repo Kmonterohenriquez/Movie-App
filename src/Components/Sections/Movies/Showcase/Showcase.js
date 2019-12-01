@@ -37,7 +37,7 @@ class Showcase extends Component {
 			if (!sliderEl) {
 				return;
 			}
-			const slider = new Swiper(sliderEl, {
+			new Swiper(sliderEl, {
 				init: true,
 				slidesPerView: 1,
 				loop: false,

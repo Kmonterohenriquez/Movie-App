@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Header.css';
+// import Fade from 'react-reveal/Fade';
 
 class Header extends Component {
 	constructor(props) {
@@ -33,6 +34,7 @@ class Header extends Component {
 				<h1>Discover</h1>
 				<hr />
 				<form onSubmit={this.handleSubmit}>
+				{/* <Fade top cascade duration={2000} delay={900}> */}
 					<div className='search-filter'>
 						<select name='sortBy' onChange={this.handleChange}>
 							<option value='popularity.asc'>Popularity Ascending</option>
@@ -59,6 +61,7 @@ class Header extends Component {
 						<input name='withKeywords' onChange={this.handleChange} type='text' placeholder='Keywords' />
 						<input name='year' onChange={this.handleChange} type='numeric' placeholder='Enter Year' />
 					</div>
+				{/* </Fade> */}
 					<button> Search </button>
 				</form>
 			</div>

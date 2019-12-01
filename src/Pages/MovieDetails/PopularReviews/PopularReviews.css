@@ -70,4 +70,44 @@
 .Review-container .Review a i {
   margin-left: 5px;
 }
+
+@media (max-width: 600px) {
+  .Review-container {
+    padding: 10px 0 50px;
+  }
+  .Review-container h1 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .Review-container .Review {
+    margin: 30px 0;
+    padding: 20px;
+  }
+  .Review-container .Review-user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+  }
+  .Review-container .Review-user-info .User-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  .Review-container .Review-user-info .Review-author {
+    font-size: 1rem;
+  }
+  .Review-container .Review-content {
+    padding: 0;
+    line-height: 1.5rem;
+    height: 13ch;
+    margin-bottom: 18px;
+  }
+  .Review-container .Review a {
+    margin-left: 10px;
+  }
+}
 /*# sourceMappingURL=PopularReviews.css.map */

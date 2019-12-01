@@ -1,5 +1,7 @@
 import React from 'react'
 import './Summary.css'
+// import sal from '../../../node_modules/sal.js/dist/sal'
+
 
 const Summary=(props)=> (
     <div id='Overview-container'>

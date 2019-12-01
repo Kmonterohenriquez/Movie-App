@@ -7,11 +7,11 @@ class Trailers extends Component {
     // Initiates carousels
     render() {
       (() => {
-          const sliderEl = document.querySelectorAll('.swiper-container');
+          const sliderEl = document.querySelectorAll('.Trailers-container .swiper-container');
            if(!sliderEl){
              return;
            }
-           const slider = new Swiper(sliderEl, {
+            new Swiper(sliderEl, {
              init: true,
              slidesPerView: 3,
              loop: true,
@@ -19,9 +19,9 @@ class Trailers extends Component {
              observer: true,
     
              breakpoints: {
-              1200: { slidesPerView: 3 }, 
-              900: { slidesPerView: 2 },
-              600: { slidesPerView: 1 },
+              1470: { slidesPerView: 3 }, 
+              1050: { slidesPerView: 2 },
+              300: { slidesPerView: 1 },
              },
              
              navigation: {
@@ -40,8 +40,6 @@ class Trailers extends Component {
                     <div className='swiper-slide' key={key}>
                         <iframe
                             title= {trailer.name}
-                            width="360" 
-                            height="220"
                             src={`https://www.youtube.com/embed/${trailer.key}`}
                             frameBorder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 

@@ -38,7 +38,7 @@ class MovieDetails extends Component {
 				`https://api.themoviedb.org/3/movie/${match.params.id}/reviews?api_key=${key_API}&language=en-US&page=1`
 			)
 			.then(res => {
-				console.log('Reviews results: ', res.data.results);
+				// console.log('Reviews results: ', res.data.results);
 				const reviews = res.data.results;
 				this.setState({ reviews });
 			})

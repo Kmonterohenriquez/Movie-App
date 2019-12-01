@@ -1,1 +1,6 @@
-/* No CSS *//*# sourceMappingURL=API.css.map */
+@media (max-width: 500px) {
+  .Small-sliders .swiper-button-prev, .Small-sliders .swiper-button-next {
+    display: none;
+  }
+}
+/*# sourceMappingURL=API.css.map */

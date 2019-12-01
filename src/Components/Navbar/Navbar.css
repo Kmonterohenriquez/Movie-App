@@ -1,5 +1,4 @@
 .Navbar-container {
-  height: 80px;
   width: 100%;
   background: #2d132c;
 }
@@ -73,5 +72,32 @@
 .Navbar-container .inside-header nav li a {
   color: white;
   text-decoration: none;
+}
+
+.Navbar-container .menu-icon {
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .Navbar-container .inside-header .logo img {
+    height: 25px;
+  }
+  .Navbar-container .search {
+    display: none;
+  }
+  .Navbar-container nav {
+    display: none;
+  }
+  .Navbar-container .menu-icon {
+    display: block;
+  }
+  .Navbar-container .inside-header {
+    height: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

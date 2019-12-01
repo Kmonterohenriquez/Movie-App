@@ -3,7 +3,6 @@
 
     .Showcase-img
         position: relative
-        // height: 100vh
         max-height: calc(100vh - 80px)
         width: 100vw
         z-index: 1
@@ -23,7 +22,6 @@
             height: auto
             top: 0
             left: 0
-            // position: absolute
             object-fit: cover
             object-position: top
             z-index: 2
@@ -46,3 +44,13 @@
         .Showcase-rating
             font-weight: 100
             font-size: 1.2rem
+
+    @media (max-width: 450px)
+        .Movie-info
+            h3 
+                font-size: .9rem
+            .Showcase-title
+                font-size: 1.5rem
+            .Showcase-rating
+                font-size: 1rem
+
