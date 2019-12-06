@@ -59,6 +59,8 @@ class Showcase extends Component {
 				<div className='swiper-container'>
 					<div className='swiper-wrapper'>
 						{this.state.movies.map(movie => (
+
+							movie.backdrop_path ?
 							<div className='swiper-slide'>
 								<Link to={`/movie/${movie.id}`}>
 									<div className='Showcase-img'>
@@ -74,8 +76,8 @@ class Showcase extends Component {
 											Drama | {movie.vote_average} Rating
 										</p>
 									</div>
-							</Link>
-								</div>
+								</Link>
+							</div>: null
 						))}
 					</div>
 					<div class='swiper-pagination'></div>

@@ -60,7 +60,19 @@
   font-size: 1.2rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 900px) {
+  .Showcase-container .Movie-info h3 {
+    font-size: 1rem;
+  }
+  .Showcase-container .Movie-info .Showcase-title {
+    font-size: 3rem;
+  }
+  .Showcase-container .Movie-info .Showcase-rating {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
   .Showcase-container .Movie-info h3 {
     font-size: .9rem;
   }

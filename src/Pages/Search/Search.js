@@ -22,7 +22,6 @@ class Search extends Component {
 		this.getMovies();
 	}
 	componentDidUpdate() {
-		this.getMovies();
 	}
 	getFilterInfo = (
 		sortBy,

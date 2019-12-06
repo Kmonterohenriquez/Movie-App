@@ -13,24 +13,20 @@ class Trailers extends Component {
            }
             new Swiper(sliderEl, {
              init: true,
-             slidesPerView: 3,
              loop: true,
-             spaceBetween: 0,
              observer: true,
-    
              breakpoints: {
               1470: { slidesPerView: 3 }, 
               1050: { slidesPerView: 2 },
               300: { slidesPerView: 1 },
              },
-             
              navigation: {
                nextEl: '.swiper-button-next',
                prevEl: '.swiper-button-prev',
              }
            });
         })();
-        // console.log("Qty of trailers:", this.props.trailers.length)
+        
         return (
           <div className='Trailers-container'>
             <div className='swiper-container '>
