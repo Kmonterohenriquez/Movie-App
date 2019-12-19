@@ -35,7 +35,7 @@ class MovieDetails extends Component {
 		// Get Reviews
 		axios
 			.get(
-				`https://api.themoviedb.org/3/movie/${match.params.id}/reviews?api_key=${key_API}&language=en-US&page=1`
+				
 			)
 			.then(res => {
 				// console.log('Reviews results: ', res.data.results);
