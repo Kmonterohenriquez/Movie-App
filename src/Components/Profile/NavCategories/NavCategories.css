@@ -1,0 +1,98 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.xsm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.sm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.lg-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1500px;
+}
+
+* {
+  margin: 0;
+  outline: none;
+}
+
+.NavCategories-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-gap: 30px;
+  justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.NavCategories-grid .option {
+  cursor: pointer;
+  border-radius: 15px;
+  background: #801336;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform .5s, -webkit-box-shadow .5s;
+  transition: -webkit-transform .5s, -webkit-box-shadow .5s;
+  transition: transform .5s, box-shadow .5s;
+  transition: transform .5s, box-shadow .5s, -webkit-transform .5s, -webkit-box-shadow .5s;
+}
+
+.NavCategories-grid .option:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-box-shadow: 5px 5px 10px #00000057;
+          box-shadow: 5px 5px 10px #00000057;
+}
+
+.NavCategories-grid .option p {
+  color: white;
+  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 600;
+}
+
+.NavCategories-grid .option .icon-container {
+  height: 30px;
+  width: 30px;
+  background: #c72c41;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.NavCategories-grid .option .icon-container i {
+  color: white;
+}
+/*# sourceMappingURL=NavCategories.css.map */

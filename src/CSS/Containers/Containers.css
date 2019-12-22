@@ -1,27 +1,24 @@
-*{
-  margin:0;
-  outline: none;
-  font-family: 'Varela Round', sans-serif;
-}
-
-.container{
+.container {
   margin: 0 auto;
   width: 80%;
   max-width: 1200px;
 }
-.xsm-container{
+
+.xsm-container {
   margin: 0 auto;
   width: 80%;
   max-width: 400px;
 }
-.sm-container{
+
+.sm-container {
   margin: 0 auto;
   width: 80%;
   max-width: 1000px;
 }
-.lg-container{
+
+.lg-container {
   margin: 0 auto;
   width: 80%;
   max-width: 1500px;
 }
-
+/*# sourceMappingURL=Containers.css.map */

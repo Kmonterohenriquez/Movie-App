@@ -1,0 +1,56 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.xsm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.sm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.lg-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1500px;
+}
+
+* {
+  margin: 0;
+  outline: none;
+}
+
+.Profile {
+  background: #2d132c;
+}
+
+.Profile .Profile-grid {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'LeftPanel RightPanel';
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  grid-gap: 30px;
+}
+
+.Profile .Profile-grid .LeftPanel {
+  grid-area: 'LeftPanel';
+}
+
+.Profile .RightPanel {
+  grid-area: 'RightPanel';
+  height: 100vh;
+  width: 100%;
+}
+/*# sourceMappingURL=Profile.css.map */

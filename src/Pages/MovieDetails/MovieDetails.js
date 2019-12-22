@@ -7,6 +7,7 @@ import Summary from './Summary/Summary';
 import Cast from './Cast/Cast';
 import Trailers from './Trailers/Trailers';
 import PopularReviews from './PopularReviews/PopularReviews';
+import PostReview from '../../Components/PostReview/PostReview'
 
 class MovieDetails extends Component {
 	state = {
@@ -35,7 +36,7 @@ class MovieDetails extends Component {
 		// Get Reviews
 		axios
 			.get(
-				
+				`https://api.themoviedb.org/3/movie/${match.params.id}/reviews?api_key=${key_API}&language=en-US&page=1`
 			)
 			.then(res => {
 				// console.log('Reviews results: ', res.data.results);
@@ -90,6 +91,7 @@ class MovieDetails extends Component {
 					<Summary overview={overview} />
 					<Cast cast={this.state.cast} />
 					<Trailers trailers={this.state.trailers} />
+					<PostReview/>
 					<PopularReviews reviews={this.state.reviews} />
 				</div>
 			</div>

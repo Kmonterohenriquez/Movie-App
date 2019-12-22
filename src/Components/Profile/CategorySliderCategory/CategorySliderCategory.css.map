@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,uBADmB,CACnB,EAAE,CAAC;EACC,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,IAAI;EAChB,UAAU,EAAE,MAAM;EAClB,KAAK,EAAE,KAAK;EACZ,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAAG",
+    "sources": [
+        "CategorySliderCategory.sass"
+    ],
+    "names": [],
+    "file": "CategorySliderCategory.css"
+}

@@ -1,0 +1,77 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.xsm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+.sm-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+.lg-container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1500px;
+}
+
+* {
+  margin: 0;
+  outline: none;
+}
+
+.LeftPanel {
+  background: #801336;
+  max-width: 250px;
+  padding: 40px 15px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.LeftPanel .Profile-picture-container {
+  margin-bottom: 30px;
+}
+
+.LeftPanel .Profile-picture-container .Profile-picture {
+  height: 120px;
+  width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 10px #0000006c;
+          box-shadow: 5px 5px 10px #0000006c;
+}
+
+.LeftPanel h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.LeftPanel button {
+  border-radius: 30px;
+  padding: 13px 35px;
+  background: #c72c41;
+  -webkit-box-shadow: 5px 5px 10px #0000006c;
+          box-shadow: 5px 5px 10px #0000006c;
+}
+/*# sourceMappingURL=LeftPanel.css.map */
