@@ -22,7 +22,7 @@ class Showcase extends Component {
         https://api.themoviedb.org/3/movie/now_playing?api_key=${key_API}&language=en-US&page=1`
 			)
 			.then(res => {
-				console.log(res.data.results);
+				// console.log(res.data.results);
 				const movies = res.data.results;
 				this.setState({ movies });
 			});
@@ -61,7 +61,7 @@ class Showcase extends Component {
 						{this.state.movies.map(movie => (
 
 							movie.backdrop_path ?
-							<div className='swiper-slide'>
+							<div className='swiper-slide' key={movie.id}>
 								<Link to={`/movie/${movie.id}`}>
 									<div className='Showcase-img'>
 										<img
@@ -80,7 +80,7 @@ class Showcase extends Component {
 							</div>: null
 						))}
 					</div>
-					<div class='swiper-pagination'></div>
+					<div className='swiper-pagination'></div>
 				</div>
 			</div>
 		);

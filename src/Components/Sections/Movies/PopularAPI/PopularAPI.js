@@ -1,15 +1,26 @@
-import React from 'react';
-import '../../../../CSS/SingleMovie.css';
-import API from '../../../API/API';
+import React, {Component} from 'react';
+
+import { connect } from 'react-redux';
+import getPopularMovies  from '../../../../redux/actions/getPopularMovies';
+import SectionSwiper from '../../../SectionSwiper/SectionSwiper';
 
 
 
-function PopularAPI(){
-  return(
-    <div>
-      <API type='popular' titleSection='Popular'/>
-    </div>
-  )
+class PopularAPI extends Component {
+    componentDidMount() {
+		this.props.getPopularMovies()
+	}
+    render(){
+        console.log('popular movies testing...',this.props.popularMovies)
+
+        return(
+            <div className='PopularAPI'>
+				<SectionSwiper moviesData={this.props.popularMovies.popularMovies} titleSection='Popular'/>
+			</div>
+        )
+    }
 }
-
-export default PopularAPI
+const mapStateToProps = state => ({
+	popularMovies: state.getPopularMovies
+});
+export default connect(mapStateToProps, {getPopularMovies})(PopularAPI)

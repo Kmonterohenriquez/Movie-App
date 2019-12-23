@@ -1,15 +1,7 @@
 import React from 'react';
 import '../../../../CSS/SingleMovie.css';
-import API from '../../../API/API';
+import API from '../../../SectionSwiper/SectionSwiper';
 
-
-
-function NowPlayingAPI(){
-  return(
-    <div>
-      <API type='now_playing' titleSection='Now playing'/>
-    </div>
-  )
-}
+const NowPlayingAPI=()=> <API type='now_playing' titleSection='Now playing'/>
 
 export default NowPlayingAPI

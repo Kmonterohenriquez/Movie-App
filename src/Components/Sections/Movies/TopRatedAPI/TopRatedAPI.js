@@ -1,15 +1,7 @@
 import React from 'react';
 import '../../../../CSS/SingleMovie.css';
-import API from '../../../API/API';
-
-
-
-function TopRatedAPI(){
-  return(
-    <div>
-      <API type='top_rated'titleSection='Top rated'/>
-    </div>
-  )
-}
+import API from '../../../SectionSwiper/SectionSwiper';
+// 
+const TopRatedAPI =()=> <API type='top_rated'titleSection='Top rated'/>
 
 export default TopRatedAPI

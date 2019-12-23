@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EACpB,AACI,cADU,CACV,mBAAmB,EADvB,cAAc,CACW,mBAAmB,CAAC;IACrC,OAAO,EAAE,IAAI;GAAG",
     "sources": [
-        "API.sass"
+        "SectionSwiper.sass"
     ],
     "names": [],
-    "file": "API.css"
+    "file": "SectionSwiper.css"
 }

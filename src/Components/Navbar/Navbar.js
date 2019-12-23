@@ -22,7 +22,7 @@ class Navbar extends Component {
 					<Fade top delay={1200} >
 						<div className='search'>
 							<input type='text' placeholder='Search' />
-							<i class='fas fa-search'></i>
+							<i className='fas fa-search'></i>
 						</div>
 					</Fade>
 					<nav>
@@ -30,17 +30,17 @@ class Navbar extends Component {
 							<ul>
 								<li>
 									<Link to='/'>
-										<i class='fas fa-home'></i>
+										<i className='fas fa-home'></i>
 									</Link>
 								</li>
 								<li>
 									<Link to='/login'>
-										<i class='fas fa-user-circle'></i>
+										<i className='fas fa-user-circle'></i>
 									</Link>
 								</li>
 								<li>
 									<Link to='/search'>
-										<i class='fas fa-search'></i>
+										<i className='fas fa-search'></i>
 									</Link>
 								</li>
 							</ul>

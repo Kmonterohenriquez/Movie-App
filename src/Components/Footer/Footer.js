@@ -24,9 +24,9 @@ function Footer(){
                     <a href='https://www.themoviedb.org/'><img className='API-logo' src={TheMovieDB_logo} alt='TheMovieDB_logo'/></a>
                 </div>
                 <div className='social-media'>
-                    <div class='social-media-circle'><a href='https://www.facebook.com/themoviedb/'><i class="fab fa-facebook-f"></i></a></div>
-                    <div class='social-media-circle'><i class="fab fa-instagram"></i></div>
-                    <div class='social-media-circle'><a href='https://www.themoviedb.org/'><i class="fas fa-code"></i></a></div>
+                    <div className='social-media-circle'><a href='https://www.facebook.com/themoviedb/'><i className="fab fa-facebook-f"></i></a></div>
+                    <div className='social-media-circle'><i className="fab fa-instagram"></i></div>
+                    <div className='social-media-circle'><a href='https://www.themoviedb.org/'><i className="fas fa-code"></i></a></div>
                 </div>
                 {/* <a href="https://www.freepik.com/free-photos-vectors/frame">Frame vector created by freepik - www.freepik.com</a> */}
             </div>

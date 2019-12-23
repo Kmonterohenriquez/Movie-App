@@ -1,18 +1,15 @@
+import { createStore, applyMiddleware, combineReducers } from 'redux';
+import thunk from 'redux-thunk';
+import getUpcomingMovies from './reducers/upcomingMovieReducer'
+import getPopularMovies from './reducers/popularMovieReducer'
 
-  
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import promiseMiddleware from 'redux-promise-middleware'
-import getMovies from './reducers/movieReducer';
-import getReviews from './reducers/movieReducer';
-import getCasts from './reducers/movieReducer';
-import getTrailers from './reducers/movieReducer';
-
-const rootReducer = combineReducers({ 
-    getMovies,
-    getReviews,
-    getCasts,
-    getTrailers
+const rootReducer = combineReducers({
+    getPopularMovies,
+    getUpcomingMovies
 });
 
+const middleware = [thunk];
 
-export default createStore(rootReducer, applyMiddleware(promiseMiddleware));
+const store = createStore(rootReducer, applyMiddleware(...middleware));
+
+export default store;

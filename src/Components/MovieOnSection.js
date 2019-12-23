@@ -16,7 +16,7 @@ class MovieOnSection extends Component {
 						<div className='img-container'>
 							<img src={`http://image.tmdb.org/t/p/w185/${img}`} alt={title} />
 							<p className='rating'>
-								<i class='fas fa-star'></i>
+								<i className='fas fa-star'></i>
 								{rating}
 							</p>
 						</div>
