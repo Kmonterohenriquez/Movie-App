@@ -24,7 +24,7 @@
     "redux-thunk": "^2.3.0",
     "sal.js": "^0.6.4",
     "session": "^0.1.0",
-    "swiper": "^5.2.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
